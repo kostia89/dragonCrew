@@ -10,52 +10,52 @@ const browserSync = require('browser-sync').create();
 const reload = browserSync.reload;
 
 gulp.task('clean', function () {
-  return gulp.src('dist/*', {read: false})
-      .pipe(clean());
+  return gulp.src('dist/*', { read: false })
+    .pipe(clean());
 });
 
 gulp.task('prepare-css', (cb) => {
-    gulp
+  gulp
     .src('./src/styles/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('styles.min.css'))
     .pipe(autoprefixer({
-			cascade: false,
+      cascade: false,
       grid: "autoplace"
-		}))
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    
+    }))
+    .pipe(cleanCSS({ compatibility: 'ie8' }))
+
     .pipe(gulp.dest('dist/style'));
-    cb()
+  cb()
 })
 
 gulp.task('prepare-js', (cb) => {
-    gulp
+  gulp
     .src('./src/scripts/*.js')
     .pipe(concat('scripts.min.js'))
     .pipe(minifyjs())
     .pipe(gulp.dest('dist/script'));
-    cb()
+  cb()
 })
 
 
 gulp.task('prepare-img', (cb) => {
-	gulp.src('src/img/*')
-		.pipe(imagemin())
-		.pipe(gulp.dest('dist/img'));
-    cb()
+  gulp.src('src/img/*')
+    .pipe(imagemin())
+    .pipe(gulp.dest('dist/img'));
+  cb()
 });
 
-gulp.task('serve', function() {
+gulp.task('serve', function () {
 
   browserSync.init({
-      server: "./"
+    server: "./"
   });
 
   gulp.watch('src/**/*', gulp.parallel('prepare-img', 'prepare-css', 'prepare-js'));
   gulp.watch('./**/*').on('change', reload);
 });
 
-
-exports.build = gulp.series('clean', gulp.parallel( 'prepare-img', 'prepare-css', 'prepare-js')); 
+console.log('Hello');
+exports.build = gulp.series('clean', gulp.parallel('prepare-img', 'prepare-css', 'prepare-js'));
 exports.dev = gulp.series('serve');
