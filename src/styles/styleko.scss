@@ -364,18 +364,14 @@
 }
 
 @include for-tablet-fork {
-<<<<<<< HEAD
+
     .fork-subscription{
         padding-top: 88px;
-=======
-    .fork-subscription {
->>>>>>> origin/HEAD
         padding-bottom: 94px;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-image: url(/dist/img/bgForkTablet.png);
-<<<<<<< HEAD
         .fork-subscription__title{
             font-weight: 700;
             font-size: 42px;
@@ -383,10 +379,6 @@
         }
         .card-list__wraper{
             padding-top: 39px;
-=======
-
-        .card-list__wraper {
->>>>>>> origin/HEAD
             display: flex;
             justify-content: center;
             width: 574px;
@@ -414,7 +406,7 @@
 }
 
 @include for-desktop-fork {
-<<<<<<< HEAD
+
     .fork-subscription{
         padding-top: 114px;
         background-image: url(/dist/img/bgForkdesctop.png);
@@ -425,13 +417,7 @@
         }
         .card-list__wraper{
             padding-top: 61px;
-=======
-    .fork-subscription {
-        padding-top: 84px;
-        background-image: url(/dist/img/bgForkdesctop.png);
 
-        .card-list__wraper {
->>>>>>> origin/HEAD
             width: 100%;
         }
     }
