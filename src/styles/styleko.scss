@@ -305,6 +305,7 @@
                 font-size: 16px;
                 line-height: 32px;
                 color: #FFFFFF;
+                text-align: center;
             }
             .card__btn-active{
                 margin-top: 84px;
@@ -327,12 +328,19 @@
 }
 @include for-tablet-fork {
     .fork-subscription{
+        padding-top: 88px;
         padding-bottom: 94px;
         display: flex;
         flex-direction: column;
         align-items: center;
         background-image: url(/dist/img/bgForkTablet.png);
+        .fork-subscription__title{
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 44px;
+        }
         .card-list__wraper{
+            padding-top: 39px;
             display: flex;
             justify-content: center;
             width: 574px;
@@ -344,6 +352,10 @@
                 justify-content: flex-end;
                 .card{
                     padding-bottom: 36px;
+                    
+                }
+                .card__license-active{
+                    line-height: 18px;
                 }
             }
         }
@@ -354,9 +366,15 @@
 }
 @include for-desktop-fork {
     .fork-subscription{
-        padding-top: 84px;
+        padding-top: 114px;
         background-image: url(/dist/img/bgForkdesctop.png);
+        .fork-subscription__title{
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 50px;
+        }
         .card-list__wraper{
+            padding-top: 61px;
             width: 100%;
         }
     } 
