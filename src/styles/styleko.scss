@@ -373,11 +373,7 @@
         align-items: center;
         background-image: url(/dist/img/bgForkTablet.png);
 
-        .fork-subscription__title {
-            font-weight: 700;
-            font-size: 42px;
-            line-height: 44px;
-        }
+        
 
         .card-list__wraper {
             padding-top: 39px;
@@ -414,11 +410,7 @@
         padding-top: 114px;
         background-image: url(/dist/img/bgForkdesctop.png);
 
-        .fork-subscription__title {
-            font-weight: 700;
-            font-size: 48px;
-            line-height: 50px;
-        }
+        
 
         .card-list__wraper {
             padding-top: 61px;
@@ -478,6 +470,11 @@
 
         }
     }
+    .fork-subscription__title {
+        font-weight: 700;
+        font-size: 42px;
+        line-height: 44px;
+    }
 }
 
 @include for-desktop-only {
@@ -499,6 +496,7 @@
         .features__wraper {
             max-width: 1200px;
             padding-top: 94px;
+            padding-bottom: 34px;
             display: grid;
             align-items: center;
             grid-template-columns: 1fr 1fr;
@@ -525,5 +523,10 @@
                 width: 100%;
             }
         }
+    }
+    .fork-subscription__title {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 50px;
     }
 }
