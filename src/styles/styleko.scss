@@ -354,6 +354,7 @@
 }
 @include for-desktop-fork {
     .fork-subscription{
+        padding-top: 84px;
         background-image: url(/dist/img/bgForkdesctop.png);
         .card-list__wraper{
             width: 100%;
