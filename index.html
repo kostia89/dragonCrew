@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dragonCrew</title>
+    <title>FORKIO</title>
     <link rel="stylesheet" href="./dist/style/styles.min.css">
     
 </head>
@@ -20,18 +20,22 @@
                 </div>
             </div>
             <a class="header__link" href="#buy"><span class="header__link__text">Buy Now</span></a>
-            <div class="header__btn">
-                <div class="header__btn__line line1"></div>
-                <div class="header__btn__line line2"></div>
-                <div class="header__btn__line line3"></div>
+            <div class="header__btn" data-path="button-el">
+                <div class="header__btn__line line1" data-path="button-el"></div>
+                <div class="header__btn__line line2" data-path="button-el"></div>
+                <div class="header__btn__line line3" data-path="button-el"></div>
             </div>
             <nav class="header__nav disactive">
                 <ul class="header__nav__list">
-                    <li class="header__nav__item"><a class="header__nav__link" href="#overview">Overview</a></li>
-                    <li class="header__nav__item"><a class="header__nav__link" href="#aboutFork">About Fork</a></li>
-                    <li class="header__nav__item"><a class="header__nav__link" href="#buyingOptions">Buying Options</a>
+                    <li class="header__nav__item" data-target="nav-el"><a class="header__nav__link" data-target="nav-el"
+                            href="#overview">Overview</a></li>
+                    <li class="header__nav__item" data-target="nav-el"><a class="header__nav__link" data-target="nav-el"
+                            href="#aboutFork">About Fork</a></li>
+                    <li class="header__nav__item" data-target="nav-el"><a class="header__nav__link" data-target="nav-el"
+                            href="#buyingOptions">Buying Options</a>
                     </li>
-                    <li class="header__nav__item"><a class="header__nav__link" href="#support">Support</a></li>
+                    <li class="header__nav__item" data-target="nav-el"><a class="header__nav__link" data-target="nav-el"
+                            href="#support">Support</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,6 +50,7 @@
         </div>
     </div>
     <main>
+
 
         <section class="present-text">
             <h2 class="present-text__title">Revolutionary editor</h2>
@@ -130,7 +135,79 @@
             
 
         </section>
+        <section class="people">
+            <div class="people__padding">
+                <h2 class="people__title">People Are Talking About Fork</h2>
+                <div class="people__feedback-wrap">
+                    <div class="people__feedback">
+                        <div class="people__feedback__logo-wrap people__feedback__logo-wrap1">
+                            <img class="people__feedback__logo" src="./dist/img/people_logo1.png"
+                                alt="smashingMagazine">
+                        </div>
+                        <p class="people__feedback__desc1 people__feedback__desc">Sed vestibulum scelerisque urna, eu
+                            finibus leo facilisis sit
+                            amet. Proin id
+                            dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+                    </div>
+                    <div class="people__feedback">
+                        <div class="people__feedback__logo-wrap people__feedback__logo-wrap2">
+                            <img class="people__feedback__logo" src="./dist/img/people_logo2.png" alt="codrops">
+                        </div>
+                        <p class="people__feedback__desc2 people__feedback__desc">Donec euismod dolor ut ultricies
+                            consequat. Vivamus urna
+                            ipsum,
+                            rhoncus molestie
+                            neque ac, mollis eleifend nibh.</p>
+                    </div>
+                    <div class="people__feedback">
+                        <div class="people__feedback__logo-wrap people__feedback__logo-wrap3">
+                            <img class="people__feedback__logo" src="./dist/img/people_logo3.png" alt="wCompany">
+                        </div>
+                        <p class="people__feedback__desc3 people__feedback__desc">In efficitur in velit et tempus. Duis
+                            nec odio dapibus,
+                            suscipit
+                            erat fringilla,
+                            imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+                    </div>
+                    <div class="people__feedback">
+                        <div class="people__feedback__logo-wrap people__feedback__logo-wrap4">
+                            <img class="people__feedback__logo" src="./dist/img/people_logo4.png" alt="pixelBuddha">
+                        </div>
+                        <p class="people__feedback__desc4 people__feedback__desc">Sed vestibulum scelerisque urna, eu
+                            finibus leo facilisis sit
+                            amet. Proin id
+                            dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+                    </div>
+                    <div class="people__feedback">
+                        <div class="people__feedback__logo-wrap people__feedback__logo-wrap5">
+                            <img class="people__feedback__logo" src="./dist/img/people_logo5.png" alt="creativeBloq">
+                        </div>
+                        <p class="people__feedback__desc5 people__feedback__desc">Praesent ut eros tristique, malesuada
+                            lectus vel, lobortis
+                            massa.
+                            Nulla faucibus
+                            lorem id arcu consequat faucibus. </p>
+                    </div>
+                    <div class="people__feedback">
+                        <div class="people__feedback__logo-wrap people__feedback__logo-wrap6">
+                            <img class="people__feedback__logo" src="./dist/img/people_logo6.png" alt="twn">
+                        </div>
+                        <p class="people__feedback__desc6 people__feedback__desc">Fusce pharetra erat id odio blandit,
+                            nec pharetra eros
+                            venenatis.
+                            Pellentesque
+                            porttitor cursus massa et vestibulum. </p>
+                    </div>
+                </div>
+                <p class="people__text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis
+                    vitae
+                    aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci.
+                    Cum
+                    sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+                <div class="people__line"></div>
+            </div>
 
+        </section>
         <section class="fork-subscription">
 
             <h2 class="fork-subscription__title">Fork Subscription Pricing</h2>
@@ -182,9 +259,10 @@
     
                 </ul>
             </div>
-            
+        </section>    
 
-        </section>
+
+        
     </main>
 
     <script src="./dist/script/scripts.min.js"></script>
