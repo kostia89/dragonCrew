@@ -441,6 +441,9 @@
     }
 
     .features {
+        .features__wraper{
+            padding-top: 160px;
+        }
         &__title {
             font-size: 42px;
             line-height: 44px;
@@ -478,13 +481,16 @@
 }
 
 @include for-desktop-only {
+    .present-text{
+        margin-bottom: 70px;
+    }
     .present-text__title {
         font-size: 54px;
         line-height: 54px;
     }
 
     .present-text__text {
-        padding: 33px;
+        padding-top: 36px;
     }
 
     .features {
