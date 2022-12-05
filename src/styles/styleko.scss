@@ -494,7 +494,7 @@
             padding-bottom: 34px;
             display: grid;
             align-items: center;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr calc(55%);
             grid-template-areas:
                 "left top-right"
                 "left botom-right";
