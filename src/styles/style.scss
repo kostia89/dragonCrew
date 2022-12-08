@@ -78,6 +78,10 @@
             background-color: $primary-color;
         }
 
+        &__text:hover {
+            color: $primary-color;
+            background-color: #fff;
+        }
     }
 
     &__btn {
